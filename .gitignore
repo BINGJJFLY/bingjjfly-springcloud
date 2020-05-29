@@ -28,6 +28,9 @@ hs_err_pid*
 *.project
 *.component
 *.MF
-*.idea
+
+.idea/
 *.iml
+out
+gen
 
