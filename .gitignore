@@ -1,5 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
 # Compiled class file
-/target/
+target
 
 # Log file
 *.log
@@ -29,8 +31,7 @@ hs_err_pid*
 *.component
 *.MF
 
-.idea/
+.idea
 *.iml
 out
 gen
-
