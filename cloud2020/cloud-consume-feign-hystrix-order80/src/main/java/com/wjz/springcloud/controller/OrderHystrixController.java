@@ -31,7 +31,7 @@ public class OrderHystrixController {
     /*@HystrixCommand(fallbackMethod = "timeoutHandler", commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1500")
     })*/
-    // 全局服务降级配置，长时间调用会造成降级，如阻塞5秒
+    // 全局服务降级配置，长时间调用会造成降级，如阻塞5秒,@see HystrixCommandProperties.default_executionTimeoutInMilliseconds
     // 使用FeignClient全局服务降级方式进一步解耦
     @HystrixCommand
     public String paymentInfo_TimeOut(@PathVariable("id") Integer id) {
