@@ -1,0 +1,10 @@
+server:
+  port: 3355
+
+#eureka:
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:7001/eureka
+
