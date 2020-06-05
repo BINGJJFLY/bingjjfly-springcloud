@@ -11,10 +11,16 @@ spring:
           uri: https://gitee.com/BINGJJFLY/springcloud-config-repo
           search-paths:
             - config-repo
+      label: master
+  rabbitmq:
+    host: 192.168.88.128
+    port: 5672
+    username: guest
+    password: guest
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:7001/eureka
+#rabbitmq相关设置 ，暴露 bus刷新配置的端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
